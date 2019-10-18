@@ -37,4 +37,4 @@ def main():
     #write sorted list to file
     for name in alphabeticalFileLines:
         sortedFile.write(name)
-man()
+main()
