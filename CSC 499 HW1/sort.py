@@ -24,7 +24,7 @@ def main():
     for name in cleanFileLines:
         alphabeticalFile.write(name)
         
-    #open file, read
+    #open alphabetical file, read
     alphabeticalFile = open('Alphabetical File.txt', 'r', encoding='utf-8')
     
     #record lines then sort by length
@@ -37,10 +37,4 @@ def main():
     #write sorted list to file
     for name in alphabeticalFileLines:
         sortedFile.write(name)
-        
-    sortedFile = open('Sorted File.txt', 'r', encoding='utf-8')
-    
-    for name in sortedFile:
-        print(name)
-    
-main()
+man()
