@@ -38,9 +38,5 @@ def main():
     for name in alphabeticalFileLines:
         sortedFile.write(name)
         
-    sortedFile = open('Sorted File.txt', 'r', encoding='utf-8')
-    
-    for name in sortedFile:
-        print(name)
     
 main()
