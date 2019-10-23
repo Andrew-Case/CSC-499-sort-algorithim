@@ -32,7 +32,7 @@ def main():
     alphabeticalFileLines.sort(key=len)
     
     #open file or create if doesn't exist, write
-    sortedFile = open('Sorted File.txt', 'w+', encoding='utf-8')
+    sortedFile = open('Output.txt', 'w+', encoding='utf-8')
     
     #write sorted list to file
     for name in alphabeticalFileLines:
