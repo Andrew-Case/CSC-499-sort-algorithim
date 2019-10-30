@@ -1,4 +1,10 @@
 def main():
+    
+    order = ''
+    #ask for ascending or descending order
+    while order != 'a' and order != 'd':
+        order = input("Please enter a for ascending order or d for descending order. ")
+    
     #open file, read and record lines
     nameFile = open('Sort Me.txt', 'r', encoding='utf-8')
     nameFileLines = nameFile.readlines()
@@ -15,8 +21,10 @@ def main():
     
     #record lines and then sort them
     cleanFileLines = cleanFile.readlines()
-    cleanFileLines.sort()
-    
+    if order == 'a':
+        cleanFileLines.sort()
+    else:
+        cleanFileLines.sort(reverse = True)
     #open alphabetical file or creat if doesn't exist, write
     alphabeticalFile = open('Alphabetical File.txt', 'w+', encoding='utf-8')
     
@@ -24,7 +32,7 @@ def main():
     for name in cleanFileLines:
         alphabeticalFile.write(name)
         
-    #open alphabetical file, read
+    #open file, read
     alphabeticalFile = open('Alphabetical File.txt', 'r', encoding='utf-8')
     
     #record lines then sort by length
