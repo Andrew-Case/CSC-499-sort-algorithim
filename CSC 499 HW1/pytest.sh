@@ -10,6 +10,8 @@ else
     echo "test 1 failed"
     exit 1
 
+rm SortedFile.txt
+
 python sort.py "d"
 
 diff --brief <(SortedFile) <(outputDescFile) >/dev/null
