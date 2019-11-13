@@ -1,6 +1,6 @@
 python sort.py "a"
 
-diff --brief <(SortedFile) <(Output) >/dev/null
+diff --brief <(SortedFileAscd) <(Output) >/dev/null
 comp_value=$?
 
 if [ $comp_value -eq 1 ]
@@ -14,7 +14,7 @@ rm SortedFile.txt
 
 python sort.py "d"
 
-diff --brief <(SortedFile) <(Output) >/dev/null
+diff --brief <(SortedFileDesc) <(Output) >/dev/null
 comp_value=$?
 
 if [ $comp_value -eq 1 ]
