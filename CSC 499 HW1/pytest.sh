@@ -1,4 +1,4 @@
-python sort.py "a"
+python sort.py a
 
 diff --brief <(SortedFileAscd.txt) <(Output.txt) >/dev/null
 comp_value=$?
@@ -12,7 +12,7 @@ else
 
 rm SortedFile.txt
 
-python sort.py "d"
+python sort.py d
 
 diff --brief <(SortedFileDesc.txt) <(Output.txt) >/dev/null
 comp_value=$?
